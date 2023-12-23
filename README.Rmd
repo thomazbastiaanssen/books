@@ -1,22 +1,7 @@
 ---
-title: ''
-output: html_document
+output:
+  md_document:
+    variant: gfm
 ---
 
-```{r setup, echo=FALSE, message=FALSE}
-library(DT)
-library(tidyverse)
-
-tab <- read.delim("data/goodreads_library_export.csv", sep = ",")
-
-
-```
-
-
-```{r table, echo=FALSE}
-tab %>% 
-  dplyr::select(c("Title", "Author", "Average.Rating", "Original.Publication.Year","Bookshelves", "Exclusive.Shelf", "Read.Count")) %>% 
-  datatable()
-
-```
-DT::datatable(tab)
+click [Here](https://github.com/thomazbastiaanssen/books/blob/main/books.html) 
